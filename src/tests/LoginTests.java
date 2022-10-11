@@ -25,8 +25,8 @@ public class LoginTests extends BasicTest {
 		loginPage.getEmailInput().sendKeys("non-existing-user@gmal.com");
 		loginPage.getPasswordInput().sendKeys("password123");
 		loginPage.getLoginButton().click();
-		messagePopUpPage.waitMessageToBeVisible();
-		Assert.assertTrue(messagePopUpPage.getTextMessage().getText().equals("User does not exists"));
+		messagePopUpPage.waitErrorMessageToBeVisible();
+		Assert.assertTrue(messagePopUpPage.getErrorMessage().getText().equals("User does not exists"));
 		Assert.assertTrue(driver.getCurrentUrl().contains("/login"));
 	}
 
@@ -36,8 +36,8 @@ public class LoginTests extends BasicTest {
 		loginPage.getEmailInput().sendKeys("admin@admin.com");
 		loginPage.getPasswordInput().sendKeys("password123");
 		loginPage.getLoginButton().click();
-		messagePopUpPage.waitMessageToBeVisible();
-		Assert.assertTrue(messagePopUpPage.getTextMessage().getText().equals("Wrong password"));
+		messagePopUpPage.waitErrorMessageToBeVisible();
+		Assert.assertTrue(messagePopUpPage.getErrorMessage().getText().equals("Wrong password"));
 		Assert.assertTrue(driver.getCurrentUrl().contains("/login"));
 	}
 

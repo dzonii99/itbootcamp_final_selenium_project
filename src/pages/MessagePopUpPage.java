@@ -18,11 +18,11 @@ public class MessagePopUpPage {
 		this.wait = wait;
 	}
 
-	public void waitMessageToBeVisible() {
+	public void waitErrorMessageToBeVisible() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("error")));
 	}
 
-	public WebElement getTextMessage() {
+	public WebElement getErrorMessage() {
 		return driver.findElement(By.className("v-snack__content")).findElement(By.tagName("li"));
 	}
 
