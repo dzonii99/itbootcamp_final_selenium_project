@@ -29,4 +29,31 @@ public class LoginTests extends BasicTest {
 		Assert.assertTrue(messagePopUpPage.getTextMessage().getText().equals("User does not exists"));
 		Assert.assertTrue(driver.getCurrentUrl().contains("/login"));
 	}
+
+	@Test(priority = 40)
+	public void displaysErrorsWhenPasswordIsWrong() {
+		navPage.getLoginNavButton().click();
+		loginPage.getEmailInput().sendKeys("admin@admin.com");
+		loginPage.getPasswordInput().sendKeys("password123");
+		loginPage.getLoginButton().click();
+		messagePopUpPage.waitMessageToBeVisible();
+		Assert.assertTrue(messagePopUpPage.getTextMessage().getText().equals("Wrong password"));
+		Assert.assertTrue(driver.getCurrentUrl().contains("/login"));
+	}
+
+	@Test(priority = 50)
+	public void login() throws InterruptedException {
+		navPage.getLoginNavButton().click();
+		loginPage.getEmailInput().sendKeys("admin@admin.com");
+		loginPage.getPasswordInput().sendKeys("12345");
+		loginPage.getLoginButton().click();
+		Thread.sleep(1000);
+		Assert.assertTrue(driver.getCurrentUrl().contains("/home"));
+	}
+
+	@Test(priority = 60)
+	public void logout() {
+		Assert.assertTrue(navPage.getLogoutButton().isDisplayed());
+		navPage.getLogoutButton().click();
+	}
 }
