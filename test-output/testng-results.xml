@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6508" started-at="2022-10-12T01:19:59 CEST" finished-at="2022-10-12T01:20:06 CEST">
+  <suite name="Default suite" duration-ms="7242" started-at="2022-10-12T01:25:22 CEST" finished-at="2022-10-12T01:25:29 CEST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6508" started-at="2022-10-12T01:19:59 CEST" finished-at="2022-10-12T01:20:06 CEST">
+    <test name="Default test" duration-ms="7242" started-at="2022-10-12T01:25:22 CEST" finished-at="2022-10-12T01:25:29 CEST">
       <class name="tests.SignupTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SignupTests@cb0ed20]" name="setup" is-config="true" duration-ms="3772" started-at="2022-10-12T01:19:59 CEST" finished-at="2022-10-12T01:20:03 CEST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SignupTests@cb0ed20]" name="setup" is-config="true" duration-ms="3625" started-at="2022-10-12T01:25:22 CEST" finished-at="2022-10-12T01:25:25 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SignupTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="1774" started-at="2022-10-12T01:20:03 CEST" finished-at="2022-10-12T01:20:05 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SignupTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="1498" started-at="2022-10-12T01:25:25 CEST" finished-at="2022-10-12T01:25:27 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="visitsTheSignupPage()[pri:0, instance:tests.SignupTests@cb0ed20]" name="visitsTheSignupPage" duration-ms="130" started-at="2022-10-12T01:20:05 CEST" finished-at="2022-10-12T01:20:05 CEST">
+        <test-method status="PASS" signature="checksInputTypes()[pri:0, instance:tests.SignupTests@cb0ed20]" name="checksInputTypes" duration-ms="517" started-at="2022-10-12T01:25:27 CEST" finished-at="2022-10-12T01:25:27 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- visitsTheSignupPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SignupTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-12T01:20:05 CEST" finished-at="2022-10-12T01:20:05 CEST">
+        </test-method> <!-- checksInputTypes -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SignupTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-12T01:25:27 CEST" finished-at="2022-10-12T01:25:27 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.SignupTests@cb0ed20]" name="afterClass" is-config="true" duration-ms="780" started-at="2022-10-12T01:20:05 CEST" finished-at="2022-10-12T01:20:06 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SignupTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="666" started-at="2022-10-12T01:25:27 CEST" finished-at="2022-10-12T01:25:28 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="visitsTheSignupPage()[pri:0, instance:tests.SignupTests@cb0ed20]" name="visitsTheSignupPage" duration-ms="99" started-at="2022-10-12T01:25:28 CEST" finished-at="2022-10-12T01:25:28 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visitsTheSignupPage -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SignupTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-10-12T01:25:28 CEST" finished-at="2022-10-12T01:25:28 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.SignupTests@cb0ed20]" name="afterClass" is-config="true" duration-ms="775" started-at="2022-10-12T01:25:28 CEST" finished-at="2022-10-12T01:25:29 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
