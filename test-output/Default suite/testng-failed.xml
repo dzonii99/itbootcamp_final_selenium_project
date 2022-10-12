@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AuthRoutesTests">
+      <class name="tests.LocaleTests">
         <methods>
+          <include name="setLocaleToES"/>
           <include name="beforeMethod"/>
-          <include name="forbidsVisitsToAdminUsersUrlIfNotAuthenticated"/>
           <include name="setup"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- tests.AuthRoutesTests -->
+      </class> <!-- tests.LocaleTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

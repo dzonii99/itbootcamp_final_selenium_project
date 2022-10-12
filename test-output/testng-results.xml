@@ -1,69 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9522" started-at="2022-10-12T14:42:58 CEST" finished-at="2022-10-12T14:43:08 CEST">
+  <suite name="Default suite" duration-ms="10498" started-at="2022-10-12T17:44:31 CEST" finished-at="2022-10-12T17:44:42 CEST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9522" started-at="2022-10-12T14:42:58 CEST" finished-at="2022-10-12T14:43:08 CEST">
-      <class name="tests.AuthRoutesTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.AuthRoutesTests@cb0ed20]" name="setup" is-config="true" duration-ms="3712" started-at="2022-10-12T14:42:58 CEST" finished-at="2022-10-12T14:43:02 CEST">
+    <test name="Default test" duration-ms="10498" started-at="2022-10-12T17:44:31 CEST" finished-at="2022-10-12T17:44:42 CEST">
+      <class name="tests.LocaleTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="setup" is-config="true" duration-ms="3616" started-at="2022-10-12T17:44:31 CEST" finished-at="2022-10-12T17:44:35 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AuthRoutesTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="1297" started-at="2022-10-12T14:43:02 CEST" finished-at="2022-10-12T14:43:03 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="1465" started-at="2022-10-12T17:44:35 CEST" finished-at="2022-10-12T17:44:37 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="forbidsVisitsToHomeUrlIfNotAuthenticated()[pri:10, instance:tests.AuthRoutesTests@cb0ed20]" name="forbidsVisitsToHomeUrlIfNotAuthenticated" duration-ms="709" started-at="2022-10-12T14:43:03 CEST" finished-at="2022-10-12T14:43:04 CEST">
+        <test-method status="PASS" signature="setLocaleToES()[pri:10, instance:tests.LocaleTests@cb0ed20]" name="setLocaleToES" duration-ms="486" started-at="2022-10-12T17:44:37 CEST" finished-at="2022-10-12T17:44:37 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forbidsVisitsToHomeUrlIfNotAuthenticated -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AuthRoutesTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-12T14:43:04 CEST" finished-at="2022-10-12T14:43:04 CEST">
+        </test-method> <!-- setLocaleToES -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-10-12T17:44:37 CEST" finished-at="2022-10-12T17:44:37 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AuthRoutesTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="398" started-at="2022-10-12T14:43:04 CEST" finished-at="2022-10-12T14:43:05 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="651" started-at="2022-10-12T17:44:37 CEST" finished-at="2022-10-12T17:44:38 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="forbidsVisitsToProfileUrlIfNotAuthenticated()[pri:20, instance:tests.AuthRoutesTests@cb0ed20]" name="forbidsVisitsToProfileUrlIfNotAuthenticated" duration-ms="580" started-at="2022-10-12T14:43:05 CEST" finished-at="2022-10-12T14:43:05 CEST">
+        <test-method status="PASS" signature="setLocaleToEN()[pri:20, instance:tests.LocaleTests@cb0ed20]" name="setLocaleToEN" duration-ms="330" started-at="2022-10-12T17:44:38 CEST" finished-at="2022-10-12T17:44:38 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forbidsVisitsToProfileUrlIfNotAuthenticated -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AuthRoutesTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-12T14:43:05 CEST" finished-at="2022-10-12T14:43:05 CEST">
+        </test-method> <!-- setLocaleToEN -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-12T17:44:38 CEST" finished-at="2022-10-12T17:44:38 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AuthRoutesTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="422" started-at="2022-10-12T14:43:05 CEST" finished-at="2022-10-12T14:43:06 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="836" started-at="2022-10-12T17:44:38 CEST" finished-at="2022-10-12T17:44:39 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="forbidsVisitsToAdminCitiesUrlIfNotAuthenticated()[pri:30, instance:tests.AuthRoutesTests@cb0ed20]" name="forbidsVisitsToAdminCitiesUrlIfNotAuthenticated" duration-ms="555" started-at="2022-10-12T14:43:06 CEST" finished-at="2022-10-12T14:43:06 CEST">
+        <test-method status="PASS" signature="setLocaleToCN()[pri:30, instance:tests.LocaleTests@cb0ed20]" name="setLocaleToCN" duration-ms="418" started-at="2022-10-12T17:44:39 CEST" finished-at="2022-10-12T17:44:39 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forbidsVisitsToAdminCitiesUrlIfNotAuthenticated -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AuthRoutesTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-12T14:43:06 CEST" finished-at="2022-10-12T14:43:06 CEST">
+        </test-method> <!-- setLocaleToCN -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-12T17:44:39 CEST" finished-at="2022-10-12T17:44:39 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AuthRoutesTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="373" started-at="2022-10-12T14:43:06 CEST" finished-at="2022-10-12T14:43:06 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="630" started-at="2022-10-12T17:44:39 CEST" finished-at="2022-10-12T17:44:40 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="forbidsVisitsToAdminUsersUrlIfNotAuthenticated()[pri:40, instance:tests.AuthRoutesTests@cb0ed20]" name="forbidsVisitsToAdminUsersUrlIfNotAuthenticated" duration-ms="643" started-at="2022-10-12T14:43:06 CEST" finished-at="2022-10-12T14:43:07 CEST">
+        <test-method status="PASS" signature="setLocaleToFR()[pri:40, instance:tests.LocaleTests@cb0ed20]" name="setLocaleToFR" duration-ms="329" started-at="2022-10-12T17:44:40 CEST" finished-at="2022-10-12T17:44:40 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- forbidsVisitsToAdminUsersUrlIfNotAuthenticated -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AuthRoutesTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-10-12T14:43:07 CEST" finished-at="2022-10-12T14:43:07 CEST">
+        </test-method> <!-- setLocaleToFR -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-10-12T17:44:40 CEST" finished-at="2022-10-12T17:44:40 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.AuthRoutesTests@cb0ed20]" name="afterClass" is-config="true" duration-ms="763" started-at="2022-10-12T14:43:07 CEST" finished-at="2022-10-12T14:43:08 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="535" started-at="2022-10-12T17:44:40 CEST" finished-at="2022-10-12T17:44:41 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setLocaleToUA()[pri:50, instance:tests.LocaleTests@cb0ed20]" name="setLocaleToUA" duration-ms="372" started-at="2022-10-12T17:44:41 CEST" finished-at="2022-10-12T17:44:41 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setLocaleToUA -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-12T17:44:41 CEST" finished-at="2022-10-12T17:44:41 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="afterClass" is-config="true" duration-ms="767" started-at="2022-10-12T17:44:41 CEST" finished-at="2022-10-12T17:44:42 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- tests.AuthRoutesTests -->
+      </class> <!-- tests.LocaleTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
