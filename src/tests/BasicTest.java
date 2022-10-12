@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.asserts.SoftAssert;
 
 import pages.CitiesPage;
 import pages.LoginPage;
@@ -20,6 +21,7 @@ public abstract class BasicTest {
 	protected WebDriver driver;
 	protected WebDriverWait wait;
 	protected String baseUrl = "https://vue-demo.daniel-avellaneda.com";
+	protected SoftAssert softAssert;
 	protected SignUpPage signUpPage;
 	protected NavPage navPage;
 	protected LoginPage loginPage;
@@ -34,6 +36,7 @@ public abstract class BasicTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		softAssert = new SoftAssert();
 		signUpPage = new SignUpPage(driver);
 		navPage = new NavPage(driver);
 		loginPage = new LoginPage(driver);

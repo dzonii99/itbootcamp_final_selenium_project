@@ -21,6 +21,10 @@ public class CitiesPage {
 		return driver.findElement(By.className("btnNewItem"));
 	}
 
+	public WebElement getNewItemInput() {
+		return driver.findElement(By.id("name"));
+	}
+
 	public WebElement getSearchInput() {
 		return driver.findElement(By.id("search"));
 	}
@@ -42,7 +46,7 @@ public class CitiesPage {
 	}
 
 	public void waitForRowsInTheTable(int rowNumber) {
-		wait.until(ExpectedConditions.numberOfElementsToBe(By.tagName("tr"), rowNumber));
+		wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//tbody/tr"), rowNumber));
 	}
 
 	public String getCellFromTable(int rowNumber, int columnNumber) {
@@ -52,11 +56,12 @@ public class CitiesPage {
 	}
 
 	public WebElement getEditButtonFromTable(int rowNumber) {
-		return driver.findElement(By.xpath("//*[@id='edit'][" + rowNumber + "]"));
+		return driver.findElement(By.xpath("//tbody/tr[" + rowNumber + "]//button[@id='edit']"));
+
 	}
 
 	public WebElement getDeleteButtonFromTable(int rowNumber) {
-		return driver.findElement(By.xpath("//*[@id='delete'][" + rowNumber + "]"));
+		return driver.findElement(By.xpath("//tbody/tr[" + rowNumber + "]//*[@id='delete']"));
 	}
 
 }

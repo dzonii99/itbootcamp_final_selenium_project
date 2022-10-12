@@ -18,13 +18,14 @@ public class MessagePopUpPage {
 		this.wait = wait;
 	}
 
-	public void waitErrorMessageToBeVisible() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("error")));
+	public void waitMessageToBeVisible() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("v-snack__content")));
 	}
 
-	public WebElement getErrorMessage() {
+	public WebElement getMessage() {
 		return driver.findElement(By.className("v-snack__content")).findElement(By.tagName("li"));
 	}
+	
 
 	public WebElement getCloseButton() {
 		return driver.findElement(By.className("v-snack__content")).findElement(By.tagName("button"));
