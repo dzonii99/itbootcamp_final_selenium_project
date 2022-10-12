@@ -34,11 +34,11 @@ public class MessagePopUpPage {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("dlgVerifyAccount")));
 	}
 
-	public String getVerifyMessage() {
-		return driver.findElement(By.className("dlgVerifyAccount")).getText();
+	public WebElement getVerifyMessage() {
+		return driver.findElement(By.className("dlgVerifyAccount"));
 	}
 
 	public WebElement getVerifyCloseButton() {
-		return driver.findElement(By.className("btnClose "));
+		return driver.findElement(By.className("btnClose"));
 	}
 }

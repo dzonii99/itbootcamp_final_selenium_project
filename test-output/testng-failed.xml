@@ -6,8 +6,8 @@
       <class name="tests.SignupTests">
         <methods>
           <include name="beforeMethod"/>
+          <include name="signup"/>
           <include name="setup"/>
-          <include name="visitsTheSignupPage"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
         </methods>
