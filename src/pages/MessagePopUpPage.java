@@ -25,7 +25,14 @@ public class MessagePopUpPage {
 	public WebElement getMessage() {
 		return driver.findElement(By.className("v-snack__content")).findElement(By.tagName("li"));
 	}
-	
+
+	public WebElement getCityMessage() {
+		return driver.findElement(By.className("success"));
+	}
+
+	public void waitCityMessage() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("success")));
+	}
 
 	public WebElement getCloseButton() {
 		return driver.findElement(By.className("v-snack__content")).findElement(By.tagName("button"));

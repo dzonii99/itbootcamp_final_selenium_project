@@ -38,10 +38,10 @@ public class AdminCitiesTests extends BasicTest {
 		navPage.getCitiesLink().click();
 		citiesPage.getNewItemButton().click();
 		citiesPage.waitForEditAndAddItemMessageToBeVisible();
-		citiesPage.getNewItemInput().sendKeys("Egypt");
+		citiesPage.getNewItemInput().sendKeys("Nikola Milovanovic's city");
 		citiesPage.getSaveButton().click();
-		messagePopUpPage.waitMessageToBeVisible();
-		Assert.assertTrue(messagePopUpPage.getMessage().getText().equals("Saved successfully"),
+		messagePopUpPage.waitCityMessage();
+		Assert.assertTrue(messagePopUpPage.getCityMessage().getText().contains("Saved successfully"),
 				"Pop up message should be 'Saved successfully'");
 	}
 
@@ -49,14 +49,14 @@ public class AdminCitiesTests extends BasicTest {
 	public void editCity() {
 		navPage.getAdminButton().click();
 		navPage.getCitiesLink().click();
-		citiesPage.getSearchInput().sendKeys("Egypt");
+		citiesPage.getSearchInput().sendKeys("Nikola Milovanovic's city");
 		citiesPage.waitForRowsInTheTable(1);
 		citiesPage.getEditButtonFromTable(1).click();
 		citiesPage.getNewItemInput().sendKeys(Keys.CONTROL, "a", Keys.BACK_SPACE);
-		citiesPage.getNewItemInput().sendKeys("Ratko Jovic");
+		citiesPage.getNewItemInput().sendKeys("Nikola Milovanovic's city Edited");
 		citiesPage.getSaveButton().click();
-		messagePopUpPage.waitMessageToBeVisible();
-		Assert.assertTrue(messagePopUpPage.getMessage().getText().equals("Saved successfully"),
+		messagePopUpPage.waitCityMessage();
+		Assert.assertTrue(messagePopUpPage.getCityMessage().getText().contains("Saved successfully"),
 				"Pop up message should be 'Saved successfully'");
 
 	}
@@ -65,24 +65,25 @@ public class AdminCitiesTests extends BasicTest {
 	public void searchCity() {
 		navPage.getAdminButton().click();
 		navPage.getCitiesLink().click();
-		citiesPage.getSearchInput().sendKeys("Ratko Jovic");
+		citiesPage.getSearchInput().sendKeys("Nikola Milovanovic's city Edited");
 		citiesPage.waitForRowsInTheTable(1);
-		Assert.assertTrue(citiesPage.getCellFromTable(1, 2).equals("Ratko Jovic"), "Cell should be 'Ratko Jovic'");
+		Assert.assertTrue(citiesPage.getCellFromTable(1, 1).contains("Nikola Milovanovic's city Edited"),
+				"Cell should be 'Nikola Milovanovic's city Edited'");
 	}
 
 	@Test(priority = 60)
 	public void deleteCity() {
 		navPage.getAdminButton().click();
 		navPage.getCitiesLink().click();
-		citiesPage.getSearchInput().sendKeys("Ratko Jovic");
+		citiesPage.getSearchInput().sendKeys("Nikola Milovanovic's city Edited");
 		citiesPage.waitForRowsInTheTable(1);
-		Assert.assertEquals(citiesPage.getCellFromTable(1, 2), citiesPage.getSearchInput().getText(),
-				"Cell should be 'Ratko Jovic'");
+		Assert.assertEquals(citiesPage.getCellFromTable(1, 1), "Nikola Milovanovic's city Edited",
+				"Cell should be 'Nikola Milovanovic's city Edited'");
 		citiesPage.getDeleteButtonFromTable(1).click();
 		citiesPage.waitForDeleteMessageToBeVisible();
 		citiesPage.getDeleteButton().click();
-		messagePopUpPage.waitMessageToBeVisible();
-		Assert.assertTrue(messagePopUpPage.getMessage().getText().equals("Deleted successfully"),
+		messagePopUpPage.waitCityMessage();
+		Assert.assertTrue(messagePopUpPage.getCityMessage().getText().contains("Deleted successfully"),
 				"Pop up message should be 'Deleted successfully'");
 
 	}

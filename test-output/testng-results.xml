@@ -1,81 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10498" started-at="2022-10-12T17:44:31 CEST" finished-at="2022-10-12T17:44:42 CEST">
+  <suite name="Default suite" duration-ms="19090" started-at="2022-10-13T01:20:20 CEST" finished-at="2022-10-13T01:20:39 CEST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10498" started-at="2022-10-12T17:44:31 CEST" finished-at="2022-10-12T17:44:42 CEST">
-      <class name="tests.LocaleTests">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="setup" is-config="true" duration-ms="3616" started-at="2022-10-12T17:44:31 CEST" finished-at="2022-10-12T17:44:35 CEST">
+    <test name="Default test" duration-ms="19090" started-at="2022-10-13T01:20:20 CEST" finished-at="2022-10-13T01:20:39 CEST">
+      <class name="tests.AdminCitiesTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="setup" is-config="true" duration-ms="3547" started-at="2022-10-13T01:20:20 CEST" finished-at="2022-10-13T01:20:24 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="1465" started-at="2022-10-12T17:44:35 CEST" finished-at="2022-10-12T17:44:37 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="1304" started-at="2022-10-13T01:20:24 CEST" finished-at="2022-10-13T01:20:25 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="setLocaleToES()[pri:10, instance:tests.LocaleTests@cb0ed20]" name="setLocaleToES" duration-ms="486" started-at="2022-10-12T17:44:37 CEST" finished-at="2022-10-12T17:44:37 CEST">
+        <test-method status="PASS" signature="visitTheAdminCitiesPageAndListCities()[pri:10, instance:tests.AdminCitiesTests@cb0ed20]" name="visitTheAdminCitiesPageAndListCities" duration-ms="1510" started-at="2022-10-13T01:20:25 CEST" finished-at="2022-10-13T01:20:27 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setLocaleToES -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-10-12T17:44:37 CEST" finished-at="2022-10-12T17:44:37 CEST">
+        </test-method> <!-- visitTheAdminCitiesPageAndListCities -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-13T01:20:27 CEST" finished-at="2022-10-13T01:20:27 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="651" started-at="2022-10-12T17:44:37 CEST" finished-at="2022-10-12T17:44:38 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="546" started-at="2022-10-13T01:20:27 CEST" finished-at="2022-10-13T01:20:27 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="setLocaleToEN()[pri:20, instance:tests.LocaleTests@cb0ed20]" name="setLocaleToEN" duration-ms="330" started-at="2022-10-12T17:44:38 CEST" finished-at="2022-10-12T17:44:38 CEST">
+        <test-method status="PASS" signature="checksInputTypesForCreateOrEditNewCity()[pri:20, instance:tests.AdminCitiesTests@cb0ed20]" name="checksInputTypesForCreateOrEditNewCity" duration-ms="595" started-at="2022-10-13T01:20:27 CEST" finished-at="2022-10-13T01:20:28 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setLocaleToEN -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-12T17:44:38 CEST" finished-at="2022-10-12T17:44:38 CEST">
+        </test-method> <!-- checksInputTypesForCreateOrEditNewCity -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-13T01:20:28 CEST" finished-at="2022-10-13T01:20:28 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="836" started-at="2022-10-12T17:44:38 CEST" finished-at="2022-10-12T17:44:39 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="447" started-at="2022-10-13T01:20:28 CEST" finished-at="2022-10-13T01:20:28 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="setLocaleToCN()[pri:30, instance:tests.LocaleTests@cb0ed20]" name="setLocaleToCN" duration-ms="418" started-at="2022-10-12T17:44:39 CEST" finished-at="2022-10-12T17:44:39 CEST">
+        <test-method status="PASS" signature="createNewCity()[pri:30, instance:tests.AdminCitiesTests@cb0ed20]" name="createNewCity" duration-ms="1622" started-at="2022-10-13T01:20:28 CEST" finished-at="2022-10-13T01:20:30 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setLocaleToCN -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-12T17:44:39 CEST" finished-at="2022-10-12T17:44:39 CEST">
+        </test-method> <!-- createNewCity -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-10-13T01:20:30 CEST" finished-at="2022-10-13T01:20:30 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="630" started-at="2022-10-12T17:44:39 CEST" finished-at="2022-10-12T17:44:40 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="436" started-at="2022-10-13T01:20:30 CEST" finished-at="2022-10-13T01:20:30 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="setLocaleToFR()[pri:40, instance:tests.LocaleTests@cb0ed20]" name="setLocaleToFR" duration-ms="329" started-at="2022-10-12T17:44:40 CEST" finished-at="2022-10-12T17:44:40 CEST">
+        <test-method status="PASS" signature="editCity()[pri:40, instance:tests.AdminCitiesTests@cb0ed20]" name="editCity" duration-ms="3040" started-at="2022-10-13T01:20:30 CEST" finished-at="2022-10-13T01:20:33 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setLocaleToFR -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-10-12T17:44:40 CEST" finished-at="2022-10-12T17:44:40 CEST">
+        </test-method> <!-- editCity -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-10-13T01:20:33 CEST" finished-at="2022-10-13T01:20:33 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="535" started-at="2022-10-12T17:44:40 CEST" finished-at="2022-10-12T17:44:41 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="454" started-at="2022-10-13T01:20:33 CEST" finished-at="2022-10-13T01:20:34 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="setLocaleToUA()[pri:50, instance:tests.LocaleTests@cb0ed20]" name="setLocaleToUA" duration-ms="372" started-at="2022-10-12T17:44:41 CEST" finished-at="2022-10-12T17:44:41 CEST">
+        <test-method status="PASS" signature="searchCity()[pri:50, instance:tests.AdminCitiesTests@cb0ed20]" name="searchCity" duration-ms="1956" started-at="2022-10-13T01:20:34 CEST" finished-at="2022-10-13T01:20:36 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setLocaleToUA -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-12T17:44:41 CEST" finished-at="2022-10-12T17:44:41 CEST">
+        </test-method> <!-- searchCity -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-10-13T01:20:36 CEST" finished-at="2022-10-13T01:20:36 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.LocaleTests@cb0ed20]" name="afterClass" is-config="true" duration-ms="767" started-at="2022-10-12T17:44:41 CEST" finished-at="2022-10-12T17:44:42 CEST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="beforeMethod" is-config="true" duration-ms="477" started-at="2022-10-13T01:20:36 CEST" finished-at="2022-10-13T01:20:36 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="deleteCity()[pri:60, instance:tests.AdminCitiesTests@cb0ed20]" name="deleteCity" duration-ms="2257" started-at="2022-10-13T01:20:36 CEST" finished-at="2022-10-13T01:20:39 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCity -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-10-13T01:20:39 CEST" finished-at="2022-10-13T01:20:39 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.AdminCitiesTests@cb0ed20]" name="afterClass" is-config="true" duration-ms="837" started-at="2022-10-13T01:20:39 CEST" finished-at="2022-10-13T01:20:39 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- tests.LocaleTests -->
+      </class> <!-- tests.AdminCitiesTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

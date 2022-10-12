@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.LocaleTests">
+      <class name="tests.AdminCitiesTests">
         <methods>
-          <include name="setLocaleToES"/>
           <include name="beforeMethod"/>
           <include name="setup"/>
+          <include name="deleteCity"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- tests.LocaleTests -->
+      </class> <!-- tests.AdminCitiesTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -34,7 +34,7 @@ public class CitiesPage {
 	}
 
 	public void waitForDeleteMessageToBeVisible() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Warning")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("warning")));
 	}
 
 	public WebElement getSaveButton() {
@@ -42,7 +42,7 @@ public class CitiesPage {
 	}
 
 	public WebElement getDeleteButton() {
-		return driver.findElement(By.xpath("//*[@type='button']")).findElement(By.linkText("Delete"));
+		return driver.findElement(By.xpath("//*[@class='v-card__actions']//*[@type='button'][2]"));
 	}
 
 	public void waitForRowsInTheTable(int rowNumber) {
@@ -61,7 +61,7 @@ public class CitiesPage {
 	}
 
 	public WebElement getDeleteButtonFromTable(int rowNumber) {
-		return driver.findElement(By.xpath("//tbody/tr[" + rowNumber + "]//*[@id='delete']"));
+		return driver.findElement(By.xpath("//tbody/tr[" + rowNumber + "]//button[@id='delete']"));
 	}
 
 }
