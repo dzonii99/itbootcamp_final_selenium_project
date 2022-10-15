@@ -6,9 +6,8 @@ import org.testng.annotations.Test;
 public class SignupTests extends BasicTest {
 
 	@Test(priority = 10)
-	public void visitsTheSignupPage() throws InterruptedException {
+	public void visitsTheSignupPage() {
 		navPage.getSignUpButton().click();
-		Thread.sleep(1000);
 		Assert.assertTrue(driver.getCurrentUrl().contains("/signup"), "Page should contain '/signup' in url");
 	}
 

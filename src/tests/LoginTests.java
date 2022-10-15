@@ -46,12 +46,11 @@ public class LoginTests extends BasicTest {
 	}
 
 	@Test(priority = 50)
-	public void login() throws InterruptedException {
+	public void login() {
 		navPage.getLoginNavButton().click();
 		loginPage.getEmailInput().sendKeys("admin@admin.com");
 		loginPage.getPasswordInput().sendKeys("12345");
 		loginPage.getLoginButton().click();
-		Thread.sleep(1000);
 		Assert.assertTrue(driver.getCurrentUrl().contains("/home"), "Url should contains '/home'");
 	}
 

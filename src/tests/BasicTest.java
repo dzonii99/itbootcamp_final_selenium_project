@@ -1,10 +1,18 @@
 package tests;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Date;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -15,6 +23,7 @@ import pages.CitiesPage;
 import pages.LoginPage;
 import pages.MessagePopUpPage;
 import pages.NavPage;
+import pages.ProfilePage;
 import pages.SignUpPage;
 
 public abstract class BasicTest {
@@ -27,6 +36,7 @@ public abstract class BasicTest {
 	protected LoginPage loginPage;
 	protected CitiesPage citiesPage;
 	protected MessagePopUpPage messagePopUpPage;
+	protected ProfilePage profilePage;
 
 	@BeforeClass
 	public void setup() {
@@ -41,6 +51,7 @@ public abstract class BasicTest {
 		navPage = new NavPage(driver);
 		loginPage = new LoginPage(driver);
 		citiesPage = new CitiesPage(driver, wait);
+		profilePage = new ProfilePage(driver);
 		messagePopUpPage = new MessagePopUpPage(driver, wait);
 	}
 
@@ -50,11 +61,13 @@ public abstract class BasicTest {
 	}
 
 	@AfterMethod
-	public void afterMethod() {
-//		Date currentDate = new Date();
-//		String screenshot = currentDate.toString().replace(" ", "-");
-//		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(screenshotFile, new File("img/" + screenshot + ".png"));
+	public void afterMethod(ITestResult result) throws IOException {
+		if (ITestResult.FAILURE == result.getStatus()) {
+//			Date currentDate = new Date();
+//			String screenshot = currentDate.toString().replace(" ", "-");
+			File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(screenshotFile, new File("img/" + result.getName() + ".png"));
+		}
 	}
 
 	@AfterClass
